@@ -1,5 +1,5 @@
 (function() {
-    angular.module('wazzurb', ['ngRoute']).config(moduleConfig);
+    angular.module('wazzurb', ['ngRoute', 'kendo.directives']).config(moduleConfig);
     
     moduleConfig.$inject = ['$routeProvider'];
     
