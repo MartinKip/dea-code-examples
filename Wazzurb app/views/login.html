@@ -1,0 +1,12 @@
+<div>
+    <div class="login" data-ng-hide="login.loggedIn">
+        <p>
+            <button type="button" data-ng-click="login.login()" >Login</button>
+        </p>
+    </div>
+    <div class="logout" data-ng-show="login.loggedIn">
+        <p>
+            <button type="button" data-ng-click="login.logout()" >Logout</button>
+        </p>
+    </div>
+</div>

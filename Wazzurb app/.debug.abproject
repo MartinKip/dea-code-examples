@@ -1,5 +1,6 @@
 {
   "CorePlugins": [
+    "com.phonegap.plugins.facebookconnect@0.11.2",
     "org.apache.cordova.battery-status",
     "org.apache.cordova.camera",
     "org.apache.cordova.console",
@@ -19,5 +20,11 @@
     "org.apache.cordova.splashscreen",
     "org.apache.cordova.statusbar",
     "org.apache.cordova.vibration"
-  ]
+  ],
+  "CordovaPluginVariables": {
+    "com.phonegap.plugins.facebookconnect": {
+      "APP_ID": "834294066655166",
+      "APP_NAME": "Wazzurb"
+    }
+  }
 }
