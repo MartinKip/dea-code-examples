@@ -42,7 +42,10 @@
     "ID_RESOLUTION_WXGA",
     "ID_RESOLUTION_HD720P"
   ],
-  "CorePlugins": [
-    "com.phonegap.plugins.facebookconnect@0.11.2"
-  ]
+  "CordovaPluginVariables": {
+    "com.phonegap.plugins.facebookconnect": {
+      "APP_ID": "834294066655166",
+      "APP_NAME": "Wazzurb"
+    }
+  }
 }

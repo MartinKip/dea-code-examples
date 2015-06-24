@@ -1,5 +1,5 @@
 (function() {
-    angular.module('wazzurb', ['ngRoute', 'kendo.directives']).config(moduleConfig);
+    angular.module('wazzurb', ['ngRoute', 'kendo.directives', 'ngStorage']).config(moduleConfig);
     
     moduleConfig.$inject = ['$routeProvider'];
     
@@ -10,4 +10,4 @@
             controllerAs: 'login'
 		})
     }
-})();
+})(window);

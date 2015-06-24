@@ -1,12 +1,22 @@
 <div>
-    <div class="login" data-ng-hide="login.loggedIn">
+    <div data-ng-show="login.userLoggedIn()">
+        <h1>
+            Welcome: {{login.userName()}}
+        </h1>
+        <div class="circular">
+            <img data-ng-src="{{login.profilePicture()}}" alt="User profile picture" class>
+        </div>
         <p>
-            <button type="button" data-ng-click="login.login()" >Login</button>
+            <button type="button" data-ng-click="login.inviteFriends()">Invite friends</button>
+        </p>
+        <p>
+            <button type="button" data-ng-click="login.logout()">Logout</button>
         </p>
     </div>
-    <div class="logout" data-ng-show="login.loggedIn">
+    <div class="login" data-ng-hide="login.userLoggedIn()">
+        <h1>Login to Wazzurb</h1>
         <p>
-            <button type="button" data-ng-click="login.logout()" >Logout</button>
+            <button type="button" data-ng-click="login.login()" >Login</button>
         </p>
     </div>
 </div>
